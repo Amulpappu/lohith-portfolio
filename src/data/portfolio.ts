@@ -120,7 +120,8 @@ export const site = {
   /** Link to your résumé PDF. Leave empty to hide the Résumé button. */
   resumeUrl: "",
   tiles: [
-    { label: "Shipped projects", value: "6 public repos on GitHub" },
+    // Counts itself from the projects list above, so it stays right when you add a project.
+    { label: "Shipped projects", value: `${projects.length} projects on GitHub` },
     { label: "Currently", value: "B.E. CSE (Cyber Security), Year 1" },
     { label: "Based in Coimbatore, IN", value: "Open to internships & remote" },
   ],

@@ -10,20 +10,14 @@ const hrefsIn = (selector: string) =>
   Array.from(document.querySelectorAll(`${selector} a`)).map((a) => a.getAttribute("href"));
 
 describe("Project links", () => {
-  it("shows only the six real GitHub projects, in order", () => {
+  it("shows exactly the projects in the data file, in order", () => {
     render(<Index />);
 
     const titles = Array.from(document.querySelectorAll("#projects h3")).map((h) =>
       h.textContent?.trim(),
     );
-    expect(titles).toEqual([
-      "Jiraiya Bot Monitor",
-      "Manjummel",
-      "AgriGuard",
-      "SpendWise",
-      "Moonlight ML Workshop",
-      "Gamer Portfolio",
-    ]);
+    expect(titles).toEqual(site.projects.map((p) => p.title));
+    expect(titles[0]).toBe("Jiraiya Bot Monitor");
     for (const gone of ["CurrentGuard AI", "Smart Solar Parking Roof", "IndiaSkills 2026–27", "AGRIGUARD", "SaaS Platform"]) {
       expect(document.querySelector("#projects")).not.toHaveTextContent(gone);
     }
@@ -40,6 +34,14 @@ describe("Project links", () => {
       expect(card.getAttribute("href")).toBe(p.repoUrl);
       expect(card.getAttribute("target")).toBe("_blank");
       expect(card.getAttribute("rel")).toBe("noopener noreferrer");
+    }
+
+    // Every repo link must point at one specific repo on this account, never the profile.
+    for (const p of site.projects) {
+      const urls = [p.repoUrl, ...(p.links ?? []).map((l) => l.url)].filter(
+        (u): u is string => !!u && u.startsWith("https://github.com/"),
+      );
+      for (const u of urls) expect(u).toMatch(/^https:\/\/github\.com\/Amulpappu\/[^/]+$/);
     }
 
     expect(projectHrefs).not.toContain(PROFILE);
