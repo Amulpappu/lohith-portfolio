@@ -60,7 +60,7 @@ const projects: Project[] = [
       "AI crop disease detection",
       "Crop health monitoring for farmers",
     ],
-    tags: ["TypeScript", "AI/ML"],
+    tags: ["Next.js", "FastAPI", "Supabase", "Tailwind", "AI/ML"],
     status: "Prototype · in development",
     repoUrl: "https://github.com/Amulpappu/AgriGuard",
     image: og("AgriGuard"),
@@ -118,7 +118,7 @@ export const site = {
     "First-year B.E. CSE (Cyber Security) student at Rathinam Technical Campus. I build Discord bots, admin dashboards, AI tools and full-stack apps.",
   status: "Available for internships & hackathons",
   /** Link to your résumé PDF. Leave empty to hide the Résumé button. */
-  resumeUrl: "",
+  resumeUrl: "/Lohith_K_Resume.pdf",
   tiles: [
     // Counts itself from the projects list above, so it stays right when you add a project.
     { label: "Shipped projects", value: `${projects.length} projects on GitHub` },
@@ -142,9 +142,10 @@ export const site = {
   projects,
   skills: [
     { group: "Software development", items: ["Python", "TypeScript", "JavaScript", "Kotlin"] },
-    { group: "Web", items: ["React", "Vite", "Tailwind", "FastAPI", "HTML/CSS"] },
+    { group: "Web", items: ["React", "Next.js", "Vite", "Tailwind", "FastAPI", "Flask", "HTML/CSS"] },
     { group: "AI & automation", items: ["ml5.js", "Teachable Machine", "OCR", "Discord bots (discord.py)", "Google Sheets API"] },
     { group: "Data & cloud", items: ["PostgreSQL", "Firebase", "Supabase", "Docker", "Vercel", "Render", "Oracle"] },
+    { group: "Productivity", items: ["Microsoft Excel", "Google Sheets", "Spreadsheets"] },
     { group: "Creative tools", items: ["Blender", "After Effects", "Runway"] },
     { group: "Focus area", items: ["Cyber Security (student)"] },
   ],
@@ -161,6 +162,6 @@ export const site = {
     github: "https://github.com/Amulpappu",
     linkedin: "https://www.linkedin.com/in/lohith-k-b1331a3a8",
     /** Your email. Leave empty to hide the email link. */
-    email: "",
+    email: "lohithgamer12@gmail.com",
   },
 };

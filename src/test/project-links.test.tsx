@@ -89,11 +89,18 @@ describe("Project links", () => {
 });
 
 describe("Honest content", () => {
-  it("hides résumé and email links while their fields are empty", () => {
+  it("links the real résumé PDF and email", () => {
     render(<Index />);
-    expect(site.resumeUrl).toBe("");
-    expect(document.body).not.toHaveTextContent("Résumé");
-    expect(document.querySelector('a[href^="mailto:"]')).toBeNull();
+    expect(site.resumeUrl).toBe("/Lohith_K_Resume.pdf");
+    const resume = Array.from(document.querySelectorAll(`a[href="${site.resumeUrl}"]`));
+    expect(resume.length).toBe(2); // hero button + contact link
+    for (const a of resume) expect(a.getAttribute("target")).toBe("_blank");
+    expect(document.querySelector('a[href="mailto:lohithgamer12@gmail.com"]')).not.toBeNull();
+  });
+  it("lists Excel and spreadsheets as skills", () => {
+    render(<Index />);
+    expect(document.querySelector("#skills")).toHaveTextContent("Microsoft Excel");
+    expect(document.querySelector("#skills")).toHaveTextContent("Spreadsheets");
   });
   it("shows the exact status labels and never claims a win", () => {
     render(<Index />);
