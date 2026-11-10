@@ -41,6 +41,21 @@ const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Hakemate",
+    subtitle: "AI teammate finder for hackathons",
+    problem: "Students miss hackathons because they can't find teammates with the right skills and free time.",
+    built: [
+      "Team DNA engine in Postgres that scores each teammate out of 100 and explains why",
+      "Google sign-in, team invites, team chat and a task board on Supabase with row-level security",
+      "College search over ~70,000 Indian institutions and skill suggestions from a student's GitHub repos",
+    ],
+    tags: ["React", "Vite", "Node.js", "Express", "Supabase", "PostgreSQL", "Vercel"],
+    status: "Live on Vercel",
+    repoUrl: "https://github.com/Amulpappu/hakemate",
+    image: og("hakemate"),
+    links: [{ label: "Live", url: "https://hakemate.vercel.app" }],
+  },
+  {
     title: "Manjummel",
     problem: "Discord servers juggle many single-purpose bots.",
     built: [
@@ -142,7 +157,7 @@ export const site = {
   projects,
   skills: [
     { group: "Software development", items: ["Python", "TypeScript", "JavaScript", "Kotlin"] },
-    { group: "Web", items: ["React", "Next.js", "Vite", "Tailwind", "FastAPI", "Flask", "HTML/CSS"] },
+    { group: "Web", items: ["React", "Next.js", "Vite", "Tailwind", "Node.js", "Express", "FastAPI", "Flask", "HTML/CSS"] },
     { group: "AI & automation", items: ["ml5.js", "Teachable Machine", "OCR", "Discord bots (discord.py)", "Google Sheets API"] },
     { group: "Data & cloud", items: ["PostgreSQL", "Firebase", "Supabase", "Docker", "Vercel", "Render", "Oracle"] },
     { group: "Productivity", items: ["Microsoft Excel", "Google Sheets", "Spreadsheets"] },
@@ -157,6 +172,11 @@ export const site = {
       status: "Stage 2 (Design Development)",
     },
     { title: "IndiaSkills Competition 2026–27 (Tamil Nadu)", detail: "Team-skill entry", status: "Registered" },
+    {
+      title: "International Hackathon 5.0 (ACE TeamUp Challenge)",
+      detail: "Hakemate · Domain 4, AI & Student Collaboration",
+      status: "Registered",
+    },
   ],
   links: {
     github: "https://github.com/Amulpappu",

@@ -107,6 +107,14 @@ story += [
         ],
     ),
     project(
+        "Hakemate", "AI teammate finder for hackathons (live: hakemate.vercel.app)", "hakemate",
+        "React · Vite · Node.js · Express · Supabase (PostgreSQL, Auth, RLS) · Vercel",
+        [
+            "SQL Team DNA engine ranks teammates out of 100 (skills, interests, free time, location, experience) and explains each match.",
+            "Google sign-in, invites, team chat, task board, XP and badges with row-level security; search over ~70,000 Indian colleges.",
+        ],
+    ),
+    project(
         "AgriGuard", "AI crop disease detection for Indian farmers", "AgriGuard",
         "Next.js · Tailwind CSS · FastAPI · SQLAlchemy · Supabase · Docker",
         [
@@ -130,20 +138,13 @@ story += [
             "Music player with button controls, welcome cards, invite tracker, server stats, and moderation commands with audit logs.",
         ],
     ),
-    project(
-        "Moonlight ML Workshop", "Real-time machine learning in the browser", "MoonLight-Machine-Learning-Workshop",
-        "JavaScript · ml5.js · p5.js · Google Teachable Machine",
-        [
-            "Three webcam/microphone apps (image, audio and pose recognition) using models I trained with Teachable Machine.",
-        ],
-    ),
 ]
 
 # Skills
 story += section("Skills")
 skills = [
     ("Languages", "Python, TypeScript, JavaScript, Kotlin, HTML/CSS"),
-    ("Web &amp; backend", "React, Next.js, Vite, Tailwind CSS, FastAPI, Flask"),
+    ("Web &amp; backend", "React, Next.js, Vite, Tailwind CSS, Node.js, Express, FastAPI, Flask"),
     ("AI &amp; automation", "Discord bots (discord.py), OCR (Tesseract), ml5.js, Teachable Machine, Google Sheets API"),
     ("Data &amp; cloud", "PostgreSQL, Supabase, Firebase, Docker, Vercel, Render, Oracle"),
     ("Productivity", "Microsoft Excel, Google Sheets (spreadsheets)"),
@@ -164,6 +165,7 @@ story += bullets([
     "<b>Vishwakarma Awards 2026–27</b> — CurrentGuard AI (Sustainable Energy · Smart Grids): Stage 2, Design Development.",
     "<b>Seva First Innovation Challenge (SFIC) 2026</b> — AgriGuard: Submitted.",
     "<b>IndiaSkills Competition 2026–27 (Tamil Nadu)</b> — Registered, team-skill entry.",
+    "<b>International Hackathon 5.0 (ACE TeamUp Challenge)</b> — Hakemate, Domain 4: Registered.",
 ])
 
 doc = SimpleDocTemplate(
