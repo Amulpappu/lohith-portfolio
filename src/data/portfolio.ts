@@ -56,6 +56,21 @@ const projects: Project[] = [
     links: [{ label: "Live", url: "https://hakemate.vercel.app" }],
   },
   {
+    title: "SkillPath AI",
+    subtitle: "Multi-agent learning paths · PromptWars × RTC",
+    problem: "Learning platforms give everyone the same courses, whatever skills they already have or career they want.",
+    built: [
+      "Five Gemini agents (Skill Analyst, Career Matcher, Learning Planner, Assessment Agent, AI Mentor) with a live hand-off log",
+      "Weighted career-match score and a week-by-week roadmap that adds revision steps after a failed quiz or rebuilds on a goal change",
+      "465 levelled quiz questions, rule-engine fallback when the AI is down, and 37 automated tests",
+    ],
+    tags: ["Next.js", "TypeScript", "Gemini API", "Tailwind", "Zod", "Vitest", "Vercel"],
+    status: "Live on Vercel · 95.99/100 AI evaluation",
+    repoUrl: "https://github.com/Amulpappu/skillpath-ai",
+    image: og("skillpath-ai"),
+    links: [{ label: "Live", url: "https://skillpath-ai-green.vercel.app" }],
+  },
+  {
     title: "Manjummel",
     problem: "Discord servers juggle many single-purpose bots.",
     built: [
@@ -165,6 +180,11 @@ export const site = {
     { group: "Focus area", items: ["Cyber Security (student)"] },
   ],
   achievements: [
+    {
+      title: "PromptWars × Rathinam Technical Campus (Google for Developers · Hack2skill)",
+      detail: "SkillPath AI · solo · AI evaluation 95.99/100",
+      status: "Top 10 of 549",
+    },
     { title: "Seva First Innovation Challenge (SFIC)", detail: "AgriGuard", status: "Submitted (2026)" },
     {
       title: "Vishwakarma Awards 2026–27",
