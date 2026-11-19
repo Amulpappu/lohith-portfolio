@@ -56,6 +56,21 @@ const projects: Project[] = [
     links: [{ label: "Live", url: "https://hakemate.vercel.app" }],
   },
   {
+    title: "NoteNinja",
+    subtitle: "Campus notes hub and smart timetable",
+    problem: "Juniors lose seniors' notes in WhatsApp groups and miss classes and deadlines kept in different places.",
+    built: [
+      "One dashboard: seniors share notes, papers and tips; moderators approve before they show as Verified",
+      "Smart timetable with clash checks, assignment deadlines and reminders sent only once",
+      "Every rule enforced in Postgres functions on Supabase, with Google/GitHub sign-in; 27/27 server tests pass",
+    ],
+    tags: ["JavaScript", "HTML", "CSS", "Supabase", "PostgreSQL", "Vercel"],
+    status: "Live on Vercel · Team Lead",
+    repoUrl: "https://github.com/Amulpappu/God-Promo-Raale",
+    image: og("God-Promo-Raale"),
+    links: [{ label: "Live", url: "https://noteninja-alpha.vercel.app" }],
+  },
+  {
     title: "SkillPath AI",
     subtitle: "Multi-agent learning paths · PromptWars × RTC",
     problem: "Learning platforms give everyone the same courses, whatever skills they already have or career they want.",
@@ -192,6 +207,11 @@ export const site = {
       status: "Stage 2 (Design Development)",
     },
     { title: "IndiaSkills Competition 2026–27 (Tamil Nadu)", detail: "Team-skill entry", status: "Registered" },
+    {
+      title: "IT HAPPENS @ RAALE #14 (Rathinam Centre of Excellence)",
+      detail: "NoteNinja · Team Lead · both challenges in one dashboard",
+      status: "Submitted",
+    },
     {
       title: "International Hackathon 5.0 (ACE TeamUp Challenge)",
       detail: "Hakemate · Domain 4, AI & Student Collaboration",

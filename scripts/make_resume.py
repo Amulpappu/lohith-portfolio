@@ -165,6 +165,7 @@ story += bullets([
     "<b>Vishwakarma Awards 2026–27</b> — CurrentGuard AI (Sustainable Energy · Smart Grids): Stage 2, Design Development.",
     "<b>Seva First Innovation Challenge (SFIC) 2026</b> — AgriGuard: Submitted.",
     "<b>IndiaSkills Competition 2026–27 (Tamil Nadu)</b> — Registered, team-skill entry.",
+    "<b>IT HAPPENS @ RAALE #14</b> — NoteNinja (Team Lead), campus notes hub + smart timetable: Submitted.",
     "<b>International Hackathon 5.0 (ACE TeamUp Challenge)</b> — Hakemate, Domain 4: Registered.",
 ])
 
